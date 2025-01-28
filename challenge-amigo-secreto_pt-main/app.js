@@ -8,6 +8,7 @@ function adicionarAmigo() {
         alert("campo vazio");
         return;
     }
+    
     if (!isNaN(tagInput.value)) {
         alert("Valor inválido, por favor digite um nome");
         return;
@@ -21,4 +22,21 @@ function adicionarAmigo() {
 
 }
 
+function sortearAmigo() {
+    let index = Math.floor(Math.random()* nomes.length);
+    let resultado = document.querySelector(".result-list")
+    resultado.innerHTML = (nomes[index])
+    listaAmigos.innerHTML = ""
+return (nomes[index])
+} 
 
+ 
+
+function atualizaAmigos(){
+    let listaAmigos = document.querySelector(".name-list")
+    let li = document.createElement("li")
+    nomes.forEach(function(element){
+        li.innerHTML = element
+    });
+    listaAmigos.append(li)
+}
