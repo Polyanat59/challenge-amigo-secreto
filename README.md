@@ -1,4 +1,4 @@
-# Jogo do amigo secgreto
+# Jogo do amigo secreto
 
 Digite os nomes para sortear o amigo secreto.
 
